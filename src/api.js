@@ -1,7 +1,9 @@
 import axios from "axios";
 
+const API_URL = process.env.REACT_APP_API_URL; // use environment variable
+
 export const api = axios.create({
-  baseURL: "https://backend-assignment-1-ct98.onrender.com/api",
+  baseURL: `${API_URL}/api`,
 });
 
 api.interceptors.request.use((config) => {
