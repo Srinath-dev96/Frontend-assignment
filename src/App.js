@@ -7,6 +7,10 @@ function App() {
   return (
     <Router>
       <Routes>
+        {/* Default route (root) */}
+        <Route path="/" element={<Login />} />
+
+        {/* Other routes */}
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
